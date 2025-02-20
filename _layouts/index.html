@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RH Hospital</title>
+    <link rel="stylesheet" href="../assets/custom.css">
+</head>
+
+<body>
+    <div class="main-card">
+        <div class="title-card">
+            <img src="../assets/rhdk_logo.jpg" alt="" class="logo">
+            <p>មន្ទីរពេទ្យបង្អែក ដង្កោ</p>
+        </div>
+
+        <div class="video-card">
+            <iframe
+                src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Fbayontvdailynews%2Fvideos%2F1288936715565612%2F&show_text=false&t=0&autoplay=1"
+                width="100%" height="100%" style="border:none;overflow:hidden" scrolling="no" frameborder="0"></iframe>
+        </div>
+
+        <!-- <a href="https://rhdk-linktree.onrender.com/" class="link-card">
+            <img src="../assets/website.png" alt="" class="icon">
+            <p>គេហទំព័រនៃមន្ទីរពេទ្យ / Website</p>
+        </a> -->
+        <a href="https://www.facebook.com/profile.php?id=100082954795594" class="link-card">
+            <img src="../assets/facebook.png" alt="" class="icon">
+            <p>ហ្វេកបុកផេក / Facebook Page</p>
+        </a>
+        <!-- <a href="https://rhdk-linktree.onrender.com/" class="link-card">
+            <img src="../assets/youtube.png" alt="" class="icon">
+            <p>យូធូបឆាណែល / Youtube</p>
+        </a> -->
+        <!-- <a href="https://rhdk-linktree.onrender.com/" class="link-card">
+            <img src="../assets/tiktok.png" alt="" class="icon">
+            <p>បណ្តាញសង្គមតីកតុក / TikTok</p>
+        </a> -->
+        <a href="https://www.facebook.com/messages/t/112353538169011" class="link-card">
+            <img src="../assets/messenger.png" alt="" class="icon">
+            <p>ឆាតសួរពត៌មានបន្ថែម / Messenger</p>
+        </a>
+        <a href="https://t.me/+85517751690" class="link-card">
+            <img src="../assets/telegram.png" alt="" class="icon">
+            <p>ឆាណែលតេលេក្រាម / Telegram</p>
+        </a>
+        <a href="https://maps.app.goo.gl/jJwBKzKovsEZVv2KA" class="link-card">
+            <img src="../assets/location.png" alt="" class="icon">
+            <p>ទីតាំងនៃមន្ទីរពេទ្យ / RH_Location</p>
+        </a>
+        <a id="price-list-link" href="/_layouts/pricelist" class="link-card">
+            <img src="../assets/riels.png" alt="" class="icon">
+            <p>តម្លៃសេវាមន្ទីរពេទ្យ / Hospital Price List</p>
+        </a>
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                const priceListLink = document.getElementById('price-list-link');
+
+                if (priceListLink) {
+                    if (window.innerWidth <= 768) {
+                        priceListLink.setAttribute('download', 'Hospital_Price_List.pdf');
+                        priceListLink.href = "../assets/price_list.pdf"; // Adjust path as needed
+                    } else {
+                        priceListLink.removeAttribute('download');
+                        priceListLink.href = "/_layouts/pricelist";
+                    }
+                }
+            });
+        </script>
+        <!-- <a href="https://rhdk-linktree.onrender.com/" class="link-card">
+          <img src="https://rhsdsm.netlify.app/logos/rielss.png" alt="" class="icon">
+          <p>កញ្ចប់ពិនិត្យសុខភាពទៅតាមវ័យ</p>
+        </a>
+        <a href="https://rhdk-linktree.onrender.com/" class="link-card">
+          <img src="https://rhsdsm.netlify.app/logos/riel.png" alt="" class="icon">
+          <p>តម្លៃសេវាមន្ទីរពេទ្យ / Hospital Price List</p>
+        </a> -->
+        <!-- <a href="https://rhdk-linktree.onrender.com/" class="link-card">
+            <img src="https://rhsdsm.netlify.app/logos/feedback.png" alt="" class="icon">
+            <p>ផ្តល់ពត័មានត្រឡប់ / Feedback</p>
+        </a> -->
+    </div>
+</body>
+
+</html>

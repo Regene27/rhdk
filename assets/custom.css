@@ -1,0 +1,102 @@
+/* Styles for mobile devices (phones) */
+@media only screen and (max-width: 768px) {
+  .main-card {
+    margin: 1rem;
+    background-color: rgb(111, 0, 180);
+    width: 100vw; /* Full width of the viewport */
+    height: 100%; /* Full height of the viewport */
+    border: 1px solid rgb(179, 57, 255);
+    border-radius: 1rem;
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+  }
+
+  .video-card {
+    margin: 0.5rem;
+    margin-top: 2rem;
+    background-color: #ffffff;
+    height: 13rem;
+    border: 3px solid #0033ff;
+  }
+}
+
+/* Styles for desktops */
+@media only screen and (min-width: 769px) {
+  .main-card {
+    margin: 1rem;
+    background-color: rgb(111, 0, 180);
+    width: 30vw; /* Full width of the viewport */
+    height: 100%; /* Full height of the viewport */
+    border: 1px solid rgb(179, 57, 255);
+    border-radius: 1rem;
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+  }  
+
+  .video-card {
+    margin: 0.5rem;
+    margin-top: 2rem;
+    background-color: #ffffff;
+    height: 19rem;
+    border: 3px solid #0033ff;
+  }
+}
+
+
+body {
+  font-family: "Kantumruy", sans-serif;
+  background-color: #000000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  height: 100%;
+}
+
+.title-card {
+  margin-top: 1.5rem;
+  margin-left: 0.2rem;
+  margin-right: 0.2rem;
+  background-color: #ffffff;
+  text-align: center;
+  color: #0033ff;
+  height: 6rem;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 2.5rem;
+}
+
+.link-card {
+  background-color: #f0f0f0d2;
+  height: 5rem;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.5rem;
+  margin: 1rem;
+  padding-left: 2rem;
+}
+
+.link-card p {
+  margin-left: -1rem;
+  flex: 1;
+}
+
+.icon {
+  width: 3rem;
+  height: 3rem;
+  margin-right: 1rem;
+}
+
+.logo {
+  width: 5rem;
+  height: 5rem;
+  margin-right: 2vw;
+  margin-left: -1vw;
+}
+
+.link-card:hover {
+  transform: scale(1.1);
+  transition: transform 0.2s ease-in-out;
+}
